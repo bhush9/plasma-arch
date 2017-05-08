@@ -1,6 +1,6 @@
 # Maintainer: Bhushan Shah <bshah@kde.org>
 pkgname=ubuntu-accounts-qml-module
-pkgver=r58
+pkgver=r64
 pkgrel=1
 pkgdesc="Expose the Online Accounts API to QML applications"
 arch=('i686' 'x86_64')
