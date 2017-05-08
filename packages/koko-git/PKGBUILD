@@ -1,12 +1,12 @@
 # Maintainer: Bhushan Shah <bhush94 at gmail dot com>
 pkgname=koko-git
-pkgver=r245.0958e6b
-pkgrel=2
+pkgver=r256.2867d03
+pkgrel=1
 pkgdesc="An Image Gallery application"
 arch=('i686' 'x86_64')
 url="http://projects.kde.org/koko"
 license=('GPL')
-depends=('plasma-framework' 'baloo' 'hicolor-icon-theme')
+depends=('plasma-framework' 'baloo' 'hicolor-icon-theme' 'kdelibs')
 makedepends=('git' 'cmake')
 provides=('koko')
 source=('git://anongit.kde.org/koko.git' 'http://download.geonames.org/export/dump/cities1000.zip' 'http://download.geonames.org/export/dump/admin1CodesASCII.txt'

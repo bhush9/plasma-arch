@@ -1,6 +1,6 @@
 # Maintainer: Bhushan Shah <bhush94 at gmail dot com>
 pkgname=plasma-mobile-git
-pkgver=r5726.978b03c
+pkgver=r5845.8005327e
 pkgrel=1
 pkgdesc="Plasma Active"
 arch=('i686' 'x86_64')

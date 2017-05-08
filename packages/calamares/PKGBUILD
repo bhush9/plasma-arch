@@ -1,17 +1,16 @@
 # Maintainer: Bhushan Shah <bshah@kde.org>
 
 pkgname=calamares
-pkgver=r1477.8a52661
+pkgver=r3018.e6394162e
 pkgrel=1
 pkgdesc="Distribution Independent installer"
 arch=('i686' 'x86_64')
 url=https://calamares.io/
 license=('GPL')
-depends=('qt5-svg' 'qt5-webkit' 'boost-libs' 'parted' 'python' 'yaml-cpp')
-source=('git://github.com/calamares/calamares.git'
-        'git://github.com/calamares/partitionmanager.git'
-        )
-md5sums=('SKIP' 'SKIP')
+depends=('qt5-svg' 'qt5-webkit' 'boost-libs' 'parted' 'python' 'yaml-cpp' 'kpmcore')
+makedepends=('boost')
+source=('git://github.com/calamares/calamares.git')
+md5sums=('SKIP')
 
 pkgver() {
   cd calamares
@@ -20,10 +19,6 @@ pkgver() {
 
 prepare() {
   mkdir -p build
-  cd calamares
-  git submodule init
-  git config submodule.src/modules/partition/partitionmanager.url "$srcdir"/partitionmanager
-  git submodule update src/modules/partition/partitionmanager
 }
 
 build() {

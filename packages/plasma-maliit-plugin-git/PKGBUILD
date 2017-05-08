@@ -1,6 +1,6 @@
 # Maintainer: Bhushan Shah <bshah@kde.org>
 pkgname=plasma-maliit-plugins-git
-pkgver=r9.3c60847
+pkgver=r2547.0b5cdb59
 pkgrel=1
 pkgdesc="Plasma Integration for Maliit virtual keyboard"
 arch=('any')
@@ -16,8 +16,8 @@ source=('git://anongit.kde.org/plasma-maliit-plugins.git')
 md5sums=('SKIP')
 
 pkgver() {
-    cd plasma-maliit-plugins-git
-	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+    cd plasma-maliit-plugins
+    printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 
 prepare() {
